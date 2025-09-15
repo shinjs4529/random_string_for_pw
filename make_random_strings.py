@@ -22,4 +22,10 @@ with open('random_strings.txt', 'w') as file:
             else:
                 file.write("\n")
 
+# 두 번째 파일 저장 (idx 표시, 줄바꿈 없이 s만 기록)
+with open('random_strings_raw.txt', 'w') as file2:
+    for s in random_strings:
+        file2.write(f"{s}\n")
+
 print("텍스트 파일로 저장되었습니다: random_strings.txt")
+print("텍스트 파일로 저장되었습니다: random_strings_raw.txt")
